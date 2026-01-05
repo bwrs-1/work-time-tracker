@@ -28,7 +28,8 @@
       "target": [
         "portable"
       ],
-      "icon": "public/vite.svg"
+      "icon": "public/icon.png",
+      "forceCodeSigning": false
     },
     "npmRebuild": false,
     "asar": true
