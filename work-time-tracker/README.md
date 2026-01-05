@@ -1,16 +1,60 @@
-# React + Vite
+# WorkTimeTracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, modern, and intuitive work time tracking application built with React, Vite, and Electron. Designed for professionals who need to manage multiple projects and track their working hours with a beautiful, high-performance interface.
 
-Currently, two official plugins are available:
+![App Icon](public/icon.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+-   **Multi-Project Management**: Effortlessly switch between different clients or projects.
+-   **Premium Bento Grid UI**: A clean, organized, and responsive layout for maximum productivity.
+-   **Dynamic Progress Tracking**: Real-time visualization of your progress against monthly targets (min/max hours).
+-   **Visual Trends**: Interactive bar charts to monitor your daily work distribution.
+-   **Flexible Exporting**: Export your data to CSV (formatted for reporting) or JSON (for backups).
+-   **Local Persistence**: All data is stored securely on your local machine using Electron's file system bridge.
+-   **Modern Aesthetics**: Features glassmorphism effects and dynamic background animations.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   [Node.js](https://nodejs.org/) (mapped to current LTS recommended)
+-   npm (comes with Node.js)
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/bwrs-1/work-time-tracker.git
+    cd work-time-tracker
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+### Development
+
+Run the application in development mode with hot-reloading:
+```bash
+npm run electron:dev
+```
+
+### Build (Create EXE)
+
+To package the application for Windows (generates a portable EXE in `dist-electron/`):
+```bash
+npm run electron:build
+```
+
+## 🛠 Tech Stack
+
+-   **Frontend**: React, Vite
+-   **Icons**: Lucide React
+-   **Charts**: Recharts
+-   **Desktop Wrapper**: Electron
+-   **Styling**: Vanilla CSS (Custom Design System)
+
+---
+
+Developed with ❤️ by **Antigravity**
